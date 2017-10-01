@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Battleships.cpp" />
+    <ClCompile Include="Source\Core\Containers\Array\TArray.cpp">
+      <Filter>Source\Core\Containers\Array</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Allocators\FAllocatorBase.cpp">
+      <Filter>Source\Core\Allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Callback\WCallback.cpp">
+      <Filter>Source\Core\Support\Callback</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Math\Vector\WVector2.cpp">
+      <Filter>Source\Core\Support\Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Math\Vector\WVector3.cpp">
+      <Filter>Source\Core\Support\Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Math\Vector\WVector4.cpp">
+      <Filter>Source\Core\Support\Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Math\Transform\WTransform2D.cpp">
+      <Filter>Source\Core\Support\Math\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Math\Transform\WTransform3D.cpp">
+      <Filter>Source\Core\Support\Math\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Math\Quaternion\WQuaternion.cpp">
+      <Filter>Source\Core\Support\Math\Quaternion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Video\FGraphic.cpp">
+      <Filter>Source\Core\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\FSystem.cpp">
+      <Filter>Source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Video\FShaderBase.cpp">
+      <Filter>Source\Core\Video</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Math\Matrix\WMatrix3.cpp">
+      <Filter>Source\Core\Support\Math\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Math\Matrix\WMatrix4.cpp">
+      <Filter>Source\Core\Support\Math\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Engine\Player\FPlayer.cpp">
+      <Filter>Source\System\Engine\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Time\FTime.cpp">
+      <Filter>Source\Core\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Entity\IEntity.cpp">
+      <Filter>Source\Core\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Renderable\IRenderable.cpp">
+      <Filter>Source\Core\Renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Resource\IResource.cpp">
+      <Filter>Source\Core\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Entity\Actor\FActor.cpp">
+      <Filter>Source\Core\Entity\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Engine\Ship\FShip.cpp">
+      <Filter>Source\System\Engine\Ship</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Renderable\Flipbook\FFlipbook.cpp">
+      <Filter>Source\Core\Renderable\Flipbook</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Resource\Texture\FTexture.cpp">
+      <Filter>Source\Core\Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Renderable\Flipbook\FFlipbookShader.cpp">
+      <Filter>Source\Core\Renderable\Flipbook</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\String\FHashedString.cpp">
+      <Filter>Source\Core\String</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Objects\Ship\FNormalShip.cpp">
+      <Filter>Source\System\Objects\Ship</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Objects\Special Effects\Smoke\FSmoke.cpp">
+      <Filter>Source\System\Objects\Special Effects\Smoke</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Environment\Water\FWaterShader.cpp">
+      <Filter>Source\Core\Environment\Water</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Camera\FCamera.cpp">
+      <Filter>Source\Core\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Objects\Special Effects\Dust\FDust.cpp">
+      <Filter>Source\System\Objects\Special Effects\Dust</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Objects\Special Effects\Foam\FFoam.cpp">
+      <Filter>Source\System\Objects\Special Effects\Foam</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Math\WMath.cpp">
+      <Filter>Source\Core\Support\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Objects\Special Effects\Trace\FTrace.cpp">
+      <Filter>Source\System\Objects\Special Effects\Trace</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\File\FFileIO.cpp">
+      <Filter>Source\Core\Support\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Resource\FResourceLoader.cpp">
+      <Filter>Source\Core\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Thread\FThread.cpp">
+      <Filter>Source\Core\Support\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Resource\FResourceCache.cpp">
+      <Filter>Source\Core\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Resource\FResourceManager.cpp">
+      <Filter>Source\Core\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\File\FDataSeeker.cpp">
+      <Filter>Source\Core\Support\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Widget\FWidgetInput.cpp">
+      <Filter>Source\Core\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Widget\FWidgetPanel.cpp">
+      <Filter>Source\Core\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Widget\IWidget.cpp">
+      <Filter>Source\Core\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Input\FInput.cpp">
+      <Filter>Source\Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Engine\Widget\View\FWidView.cpp">
+      <Filter>Source\System\Engine\Widget\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Engine\Widget\View\FWidViewShader.cpp">
+      <Filter>Source\System\Engine\Widget\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Shader\FProgramableShader.cpp">
+      <Filter>Source\Core\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Shader\IShaderIntrinsic.cpp">
+      <Filter>Source\Core\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Shader\IShaderIntrinsicVariable.cpp">
+      <Filter>Source\Core\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Shader\Intrinsics\FIFloat.cpp">
+      <Filter>Source\Core\Shader\Intrinsics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Renderable\Light\FLight.cpp">
+      <Filter>Source\Core\Renderable\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Renderable\Light\FLightShader.cpp">
+      <Filter>Source\Core\Renderable\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Engine\Light\FPointLight.cpp">
+      <Filter>Source\System\Engine\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Engine\Light\FSpotLight.cpp">
+      <Filter>Source\System\Engine\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Engine\Prop\FProp.cpp">
+      <Filter>Source\System\Engine\Prop</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Objects\Prop\FLighthouse.cpp">
+      <Filter>Source\System\Objects\Prop</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Objects\Prop\FNuncio.cpp">
+      <Filter>Source\System\Objects\Prop</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Engine\Map\FMap.cpp">
+      <Filter>Source\System\Engine\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Containers\Tree\TQuadtree.cpp">
+      <Filter>Source\Core\Containers\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Entity\Actor\FActorController.cpp">
+      <Filter>Source\Core\Entity\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Support\Timeline\FTimeline.cpp">
+      <Filter>Source\Core\Support\Timeline</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Entity\Actor\FObject.cpp">
+      <Filter>Source\Core\Entity\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Font\FFontLoader.cpp">
+      <Filter>Source\Core\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Engine\Widget\Text\FWidText.cpp">
+      <Filter>Source\System\Engine\Widget\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\System\Engine\Widget\Text\FWidTextShader.cpp">
+      <Filter>Source\System\Engine\Widget\Text</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{30996ba9-d96f-4554-bd39-6005ef32a79d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ThirdParty">
+      <UniqueIdentifier>{60d4312b-ecb0-44d0-b31c-db57984d2a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core">
+      <UniqueIdentifier>{8c52c3b6-d1b0-4cea-a671-1931b5723847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Video">
+      <UniqueIdentifier>{2fffbf36-6b2e-43b7-b4b6-1959c8c05146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Containers">
+      <UniqueIdentifier>{f11940a2-f4ac-4af8-a18b-009fc390b2dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Containers\Array">
+      <UniqueIdentifier>{51def471-5635-46b6-8709-b6e75f1ca68e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Support">
+      <UniqueIdentifier>{9c62f908-42fd-42f0-8096-0b3a28d82509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Support\Callback">
+      <UniqueIdentifier>{e6d017a1-6f22-4e80-9c10-d217f31ea523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Support\Math">
+      <UniqueIdentifier>{1e389a39-e8a2-4a08-8679-38ba6516b739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Support\Math\Primitive">
+      <UniqueIdentifier>{4938ae28-962b-4fad-ab08-5eef399eb4f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Support\Math\Quaternion">
+      <UniqueIdentifier>{933f4820-7e0e-4d40-87ff-0159f4b4a5a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Support\Math\Transform">
+      <UniqueIdentifier>{46b03cbe-ad59-41d4-bce2-01189a01614d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Support\Math\Vector">
+      <UniqueIdentifier>{1fe04924-e3da-4fc6-9d2b-2157d2ecbdad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Allocators">
+      <UniqueIdentifier>{c8624f9a-9121-4c85-8d96-59f8ac0c752e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System">
+      <UniqueIdentifier>{f9617506-f4ab-43e0-a48e-de0639c025f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Engine">
+      <UniqueIdentifier>{a5115b02-24ce-4ec1-9c34-fd2ebbee34e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Support\Math\Matrix">
+      <UniqueIdentifier>{935974a5-9116-460e-8819-222c9574bb74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Engine\Player">
+      <UniqueIdentifier>{75910558-1adb-4591-af44-172ebc98591c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Time">
+      <UniqueIdentifier>{fe217e6c-0d76-449c-8462-a630c5b56e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Entity">
+      <UniqueIdentifier>{16f4797f-8fe5-4e8a-bfa4-da448e2becc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Renderable">
+      <UniqueIdentifier>{86facd73-3884-4faf-93f0-c445d4abe113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Resource">
+      <UniqueIdentifier>{b84d6832-a5a3-444e-aa9d-cb838d454522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Entity\Actor">
+      <UniqueIdentifier>{28fa8a55-ce3b-4928-8c81-89ffc88a739c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Engine\Ship">
+      <UniqueIdentifier>{b61d55e0-f90e-4f34-8982-1b2015264272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Renderable\Flipbook">
+      <UniqueIdentifier>{80082f70-ee19-4b9f-ba30-378ddf6e7e52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Resource\Texture">
+      <UniqueIdentifier>{9ab56af9-4ceb-4a17-85c5-ba3fe60452c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\String">
+      <UniqueIdentifier>{0d5bcf44-ed22-46c7-9a8e-3a1421607fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Objects">
+      <UniqueIdentifier>{1b022ed7-54bd-455f-bed8-22729dd407bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Objects\Ship">
+      <UniqueIdentifier>{58c292cb-0647-4d12-a6a9-3fc847dcbc15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Objects\Special Effects">
+      <UniqueIdentifier>{6082f8e7-9d04-4af2-b59e-c5e2883b4446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Objects\Special Effects\Smoke">
+      <UniqueIdentifier>{fa0ca860-2880-4285-92eb-ede26fa7908a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Environment">
+      <UniqueIdentifier>{ce64f4ff-7bb7-4dcb-b38f-2de6cad1b4ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Environment\Water">
+      <UniqueIdentifier>{a5d3f2f0-60c9-4b70-a789-01522d3230d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Camera">
+      <UniqueIdentifier>{ae939fec-bc2a-4ae3-8073-bba65213d4ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Objects\Special Effects\Dust">
+      <UniqueIdentifier>{fc2b9ff2-0211-446b-b8ef-5ab58b70e33c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Objects\Special Effects\Foam">
+      <UniqueIdentifier>{8c832894-d617-4722-9b3b-ff681fc2bd2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Objects\Special Effects\Trace">
+      <UniqueIdentifier>{918d0da7-f47e-45a8-88bb-0a83db9e4b91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Support\File">
+      <UniqueIdentifier>{a2deeda0-cb7d-4758-9f86-5d6c5e11661b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Support\Thread">
+      <UniqueIdentifier>{54a07163-7799-41c4-b3cf-8c2c169e52a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Widget">
+      <UniqueIdentifier>{3f4772e1-c9af-4b18-bb70-a8af2cec76a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Input">
+      <UniqueIdentifier>{abca7b8c-92c1-417a-8477-47451cafbbe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Engine\Widget">
+      <UniqueIdentifier>{3cd6686d-1bde-4faf-9582-101ef70d6a55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Engine\Widget\View">
+      <UniqueIdentifier>{4d91a81f-a43b-4ebb-9a13-d620efaf68b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Shader">
+      <UniqueIdentifier>{6f988cfa-a7d2-4a6d-8f77-4939ffe97950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Shader\Intrinsics">
+      <UniqueIdentifier>{3b2a493f-dca3-4ab3-9bb2-c9912da9fa5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Renderable\Light">
+      <UniqueIdentifier>{152c20ea-bc73-4e55-8500-321c07fb5d98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Engine\Light">
+      <UniqueIdentifier>{2faa4286-d2c4-4171-8dd5-3f48f3b352f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Engine\Prop">
+      <UniqueIdentifier>{53cd7879-e6f6-4daa-b454-daddb93cced0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Objects\Prop">
+      <UniqueIdentifier>{edf58b22-022e-48cd-ab05-a5693473c6db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Engine\Map">
+      <UniqueIdentifier>{dbb51524-ed9a-48a9-9bef-a83b44854dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Containers\Tree">
+      <UniqueIdentifier>{bc2c7b58-73ee-4493-b812-da4e065ed706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Support\Timeline">
+      <UniqueIdentifier>{ca27d63f-b6a1-49bb-8f10-79a73cfd1a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Font">
+      <UniqueIdentifier>{6df89d19-a7d8-4838-9635-ee8f40b7e55e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\System\Engine\Widget\Text">
+      <UniqueIdentifier>{c87a9a6b-04be-4e95-bff5-7547354e3d27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Core\Containers\Array\TArray.h">
+      <Filter>Source\Core\Containers\Array</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Allocators\FAllocatorBase.h">
+      <Filter>Source\Core\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Callback\Callback.h">
+      <Filter>Source\Core\Support\Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Callback\WCallback.h">
+      <Filter>Source\Core\Support\Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Math\WMath.h">
+      <Filter>Source\Core\Support\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Math\Vector\WVector2.h">
+      <Filter>Source\Core\Support\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Math\Vector\WVector3.h">
+      <Filter>Source\Core\Support\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Math\Vector\WVector4.h">
+      <Filter>Source\Core\Support\Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Math\Transform\WTransform2D.h">
+      <Filter>Source\Core\Support\Math\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Math\Transform\WTransform3D.h">
+      <Filter>Source\Core\Support\Math\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Math\Quaternion\WQuaternion.h">
+      <Filter>Source\Core\Support\Math\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Math\Primitive\WPrimitives.h">
+      <Filter>Source\Core\Support\Math\Primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Video\FGraphic.h">
+      <Filter>Source\Core\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\FSystem.h">
+      <Filter>Source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Video\FShaderBase.h">
+      <Filter>Source\Core\Video</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Math\Matrix\WMatrix3.h">
+      <Filter>Source\Core\Support\Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Math\Matrix\WMatrix4.h">
+      <Filter>Source\Core\Support\Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Engine\Player\FPlayer.h">
+      <Filter>Source\System\Engine\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Time\FTime.h">
+      <Filter>Source\Core\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Renderable\IRenderable.h">
+      <Filter>Source\Core\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Resource\IResource.h">
+      <Filter>Source\Core\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Entity\Actor\FActor.h">
+      <Filter>Source\Core\Entity\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Engine\Ship\FShip.h">
+      <Filter>Source\System\Engine\Ship</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Renderable\Flipbook\FFlipbook.h">
+      <Filter>Source\Core\Renderable\Flipbook</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Resource\Texture\FTexture.h">
+      <Filter>Source\Core\Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Renderable\Flipbook\FFlipbookShader.h">
+      <Filter>Source\Core\Renderable\Flipbook</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\String\FHashedString.h">
+      <Filter>Source\Core\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Objects\Ship\FNormalShip.h">
+      <Filter>Source\System\Objects\Ship</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Objects\Special Effects\Smoke\FSmoke.h">
+      <Filter>Source\System\Objects\Special Effects\Smoke</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Environment\Water\FWaterShader.h">
+      <Filter>Source\Core\Environment\Water</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Camera\FCamera.h">
+      <Filter>Source\Core\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Objects\Special Effects\Dust\FDust.h">
+      <Filter>Source\System\Objects\Special Effects\Dust</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Objects\Special Effects\Foam\FFoam.h">
+      <Filter>Source\System\Objects\Special Effects\Foam</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Objects\Special Effects\Trace\FTrace.h">
+      <Filter>Source\System\Objects\Special Effects\Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\File\FFileIO.h">
+      <Filter>Source\Core\Support\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Resource\FResourceLoader.h">
+      <Filter>Source\Core\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Thread\FThread.h">
+      <Filter>Source\Core\Support\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Resource\FResourceCache.h">
+      <Filter>Source\Core\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Resource\FResourceManager.h">
+      <Filter>Source\Core\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\File\FDataSeeker.h">
+      <Filter>Source\Core\Support\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Widget\FWidgetInput.h">
+      <Filter>Source\Core\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Widget\FWidgetPanel.h">
+      <Filter>Source\Core\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Widget\IWidget.h">
+      <Filter>Source\Core\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Input\FInput.h">
+      <Filter>Source\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Engine\Widget\View\FWidView.h">
+      <Filter>Source\System\Engine\Widget\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Engine\Widget\View\FWidViewShader.h">
+      <Filter>Source\System\Engine\Widget\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Shader\FProgramableShader.h">
+      <Filter>Source\Core\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Shader\IShaderIntrinsic.h">
+      <Filter>Source\Core\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Shader\IShaderIntrinsicVariable.h">
+      <Filter>Source\Core\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Shader\Intrinsics\FIFloat.h">
+      <Filter>Source\Core\Shader\Intrinsics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Renderable\Light\FLight.h">
+      <Filter>Source\Core\Renderable\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Renderable\Light\FLightShader.h">
+      <Filter>Source\Core\Renderable\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Engine\Light\FPointLight.h">
+      <Filter>Source\System\Engine\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Engine\Light\FSpotLight.h">
+      <Filter>Source\System\Engine\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Engine\Prop\FProp.h">
+      <Filter>Source\System\Engine\Prop</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Objects\Prop\FLighthouse.h">
+      <Filter>Source\System\Objects\Prop</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Objects\Prop\FNuncio.h">
+      <Filter>Source\System\Objects\Prop</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Engine\Map\FMap.h">
+      <Filter>Source\System\Engine\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Containers\Tree\TQuadtree.h">
+      <Filter>Source\Core\Containers\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Entity\Actor\FActorController.h">
+      <Filter>Source\Core\Entity\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Support\Timeline\FTimeline.h">
+      <Filter>Source\Core\Support\Timeline</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Entity\IEntity.h">
+      <Filter>Source\Core\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Entity\Actor\FObject.h">
+      <Filter>Source\Core\Entity\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Font\FFontLoader.h">
+      <Filter>Source\Core\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Engine\Widget\Text\FWidText.h">
+      <Filter>Source\System\Engine\Widget\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\System\Engine\Widget\Text\FWidTextShader.h">
+      <Filter>Source\System\Engine\Widget\Text</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Name Conventions.txt" />
+    <Text Include="Source\Core\Support\Math\Transform\Details.txt">
+      <Filter>Source\Core\Support\Math\Transform</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

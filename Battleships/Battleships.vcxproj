@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{811756EA-AFA3-44E8-AD52-D04543E41EB6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Battleships</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Rodrigo Holztrattner\Documents\Visual Studio 2013\Projects\Battleships\Battleships\Source\ThirdParty\freetype\include;C:\Users\Rodrigo Holztrattner\Documents\Visual Studio 2013\Projects\Battleships\Battleships\Source\ThirdParty\glm;C:\Users\Rodrigo Holztrattner\Documents\Visual Studio 2013\Projects\Battleships\Battleships\Source\ThirdParty\GLFW\include;C:\Users\Rodrigo Holztrattner\Documents\Visual Studio 2013\Projects\Battleships\Battleships\Source\ThirdParty\GLEW\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Rodrigo Holztrattner\Documents\Visual Studio 2013\Projects\Battleships\Battleships\Source\ThirdParty\freetype\lib;C:\Users\Rodrigo Holztrattner\Documents\Visual Studio 2013\Projects\Battleships\Battleships\Source\ThirdParty\GLFW\lib-vc2013;C:\Users\Rodrigo Holztrattner\Documents\Visual Studio 2013\Projects\Battleships\Battleships\Source\ThirdParty\GLEW\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Source\ThirdParty\GLEW\include;$(ProjectDir)\Source\ThirdParty\GLFW\include;$(ProjectDir)\Source\ThirdParty\glm;$(ProjectDir)\Source\ThirdParty\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;glfw3dll.lib;freetype.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)\Source\ThirdParty\freetype\lib;$(ProjectDir)\Source\ThirdParty\GLEW\lib;$(ProjectDir)\Source\ThirdParty\GLFW\lib-vc2013;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Source\ThirdParty\GLEW\include;$(ProjectDir)\Source\ThirdParty\GLFW\include;$(ProjectDir)\Source\ThirdParty\glm;$(ProjectDir)\Source\ThirdParty\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)\Source\ThirdParty\freetype\lib;$(ProjectDir)\Source\ThirdParty\GLEW\lib;$(ProjectDir)\Source\ThirdParty\GLFW\lib-vc2013;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Battleships.cpp" />
+    <ClCompile Include="Source\Core\Allocators\FAllocatorBase.cpp" />
+    <ClCompile Include="Source\Core\Camera\FCamera.cpp" />
+    <ClCompile Include="Source\Core\Containers\Array\TArray.cpp" />
+    <ClCompile Include="Source\Core\Containers\Tree\TQuadtree.cpp" />
+    <ClCompile Include="Source\Core\Entity\Actor\FActor.cpp" />
+    <ClCompile Include="Source\Core\Entity\Actor\FActorController.cpp" />
+    <ClCompile Include="Source\Core\Entity\Actor\FObject.cpp" />
+    <ClCompile Include="Source\Core\Entity\IEntity.cpp" />
+    <ClCompile Include="Source\Core\Environment\Water\FWaterShader.cpp" />
+    <ClCompile Include="Source\Core\Font\FFontLoader.cpp" />
+    <ClCompile Include="Source\Core\Input\FInput.cpp" />
+    <ClCompile Include="Source\Core\Renderable\Flipbook\FFlipbook.cpp" />
+    <ClCompile Include="Source\Core\Renderable\Flipbook\FFlipbookShader.cpp" />
+    <ClCompile Include="Source\Core\Renderable\IRenderable.cpp" />
+    <ClCompile Include="Source\Core\Renderable\Light\FLight.cpp" />
+    <ClCompile Include="Source\Core\Renderable\Light\FLightShader.cpp" />
+    <ClCompile Include="Source\Core\Resource\FResourceCache.cpp" />
+    <ClCompile Include="Source\Core\Resource\FResourceLoader.cpp" />
+    <ClCompile Include="Source\Core\Resource\FResourceManager.cpp" />
+    <ClCompile Include="Source\Core\Resource\IResource.cpp" />
+    <ClCompile Include="Source\Core\Resource\Texture\FTexture.cpp" />
+    <ClCompile Include="Source\Core\Shader\FProgramableShader.cpp" />
+    <ClCompile Include="Source\Core\Shader\Intrinsics\FIFloat.cpp" />
+    <ClCompile Include="Source\Core\Shader\IShaderIntrinsic.cpp" />
+    <ClCompile Include="Source\Core\Shader\IShaderIntrinsicVariable.cpp" />
+    <ClCompile Include="Source\Core\String\FHashedString.cpp" />
+    <ClCompile Include="Source\Core\Support\Callback\WCallback.cpp" />
+    <ClCompile Include="Source\Core\Support\File\FDataSeeker.cpp" />
+    <ClCompile Include="Source\Core\Support\File\FFileIO.cpp" />
+    <ClCompile Include="Source\Core\Support\Math\Matrix\WMatrix3.cpp" />
+    <ClCompile Include="Source\Core\Support\Math\Matrix\WMatrix4.cpp" />
+    <ClCompile Include="Source\Core\Support\Math\Quaternion\WQuaternion.cpp" />
+    <ClCompile Include="Source\Core\Support\Math\Transform\WTransform2D.cpp" />
+    <ClCompile Include="Source\Core\Support\Math\Transform\WTransform3D.cpp" />
+    <ClCompile Include="Source\Core\Support\Math\Vector\WVector2.cpp" />
+    <ClCompile Include="Source\Core\Support\Math\Vector\WVector3.cpp" />
+    <ClCompile Include="Source\Core\Support\Math\Vector\WVector4.cpp" />
+    <ClCompile Include="Source\Core\Support\Math\WMath.cpp" />
+    <ClCompile Include="Source\Core\Support\Thread\FThread.cpp" />
+    <ClCompile Include="Source\Core\Support\Timeline\FTimeline.cpp" />
+    <ClCompile Include="Source\Core\Time\FTime.cpp" />
+    <ClCompile Include="Source\Core\Video\FGraphic.cpp" />
+    <ClCompile Include="Source\Core\Video\FShaderBase.cpp" />
+    <ClCompile Include="Source\Core\Widget\FWidgetInput.cpp" />
+    <ClCompile Include="Source\Core\Widget\FWidgetPanel.cpp" />
+    <ClCompile Include="Source\Core\Widget\IWidget.cpp" />
+    <ClCompile Include="Source\System\Engine\Light\FPointLight.cpp" />
+    <ClCompile Include="Source\System\Engine\Light\FSpotLight.cpp" />
+    <ClCompile Include="Source\System\Engine\Map\FMap.cpp" />
+    <ClCompile Include="Source\System\Engine\Player\FPlayer.cpp" />
+    <ClCompile Include="Source\System\Engine\Prop\FProp.cpp" />
+    <ClCompile Include="Source\System\Engine\Ship\FShip.cpp" />
+    <ClCompile Include="Source\System\Engine\Widget\Text\FWidText.cpp" />
+    <ClCompile Include="Source\System\Engine\Widget\Text\FWidTextShader.cpp" />
+    <ClCompile Include="Source\System\Engine\Widget\View\FWidView.cpp" />
+    <ClCompile Include="Source\System\Engine\Widget\View\FWidViewShader.cpp" />
+    <ClCompile Include="Source\System\FSystem.cpp" />
+    <ClCompile Include="Source\System\Objects\Prop\FLighthouse.cpp" />
+    <ClCompile Include="Source\System\Objects\Prop\FNuncio.cpp" />
+    <ClCompile Include="Source\System\Objects\Ship\FNormalShip.cpp" />
+    <ClCompile Include="Source\System\Objects\Special Effects\Dust\FDust.cpp" />
+    <ClCompile Include="Source\System\Objects\Special Effects\Foam\FFoam.cpp" />
+    <ClCompile Include="Source\System\Objects\Special Effects\Smoke\FSmoke.cpp" />
+    <ClCompile Include="Source\System\Objects\Special Effects\Trace\FTrace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Core\Allocators\FAllocatorBase.h" />
+    <ClInclude Include="Source\Core\Camera\FCamera.h" />
+    <ClInclude Include="Source\Core\Containers\Array\TArray.h" />
+    <ClInclude Include="Source\Core\Containers\Tree\TQuadtree.h" />
+    <ClInclude Include="Source\Core\Entity\Actor\FActor.h" />
+    <ClInclude Include="Source\Core\Entity\Actor\FActorController.h" />
+    <ClInclude Include="Source\Core\Entity\Actor\FObject.h" />
+    <ClInclude Include="Source\Core\Entity\IEntity.h" />
+    <ClInclude Include="Source\Core\Environment\Water\FWaterShader.h" />
+    <ClInclude Include="Source\Core\Font\FFontLoader.h" />
+    <ClInclude Include="Source\Core\Input\FInput.h" />
+    <ClInclude Include="Source\Core\Renderable\Flipbook\FFlipbook.h" />
+    <ClInclude Include="Source\Core\Renderable\Flipbook\FFlipbookShader.h" />
+    <ClInclude Include="Source\Core\Renderable\IRenderable.h" />
+    <ClInclude Include="Source\Core\Renderable\Light\FLight.h" />
+    <ClInclude Include="Source\Core\Renderable\Light\FLightShader.h" />
+    <ClInclude Include="Source\Core\Resource\FResourceCache.h" />
+    <ClInclude Include="Source\Core\Resource\FResourceLoader.h" />
+    <ClInclude Include="Source\Core\Resource\FResourceManager.h" />
+    <ClInclude Include="Source\Core\Resource\IResource.h" />
+    <ClInclude Include="Source\Core\Resource\Texture\FTexture.h" />
+    <ClInclude Include="Source\Core\Shader\FProgramableShader.h" />
+    <ClInclude Include="Source\Core\Shader\Intrinsics\FIFloat.h" />
+    <ClInclude Include="Source\Core\Shader\IShaderIntrinsic.h" />
+    <ClInclude Include="Source\Core\Shader\IShaderIntrinsicVariable.h" />
+    <ClInclude Include="Source\Core\String\FHashedString.h" />
+    <ClInclude Include="Source\Core\Support\Callback\Callback.h" />
+    <ClInclude Include="Source\Core\Support\Callback\WCallback.h" />
+    <ClInclude Include="Source\Core\Support\File\FDataSeeker.h" />
+    <ClInclude Include="Source\Core\Support\File\FFileIO.h" />
+    <ClInclude Include="Source\Core\Support\Math\Matrix\WMatrix3.h" />
+    <ClInclude Include="Source\Core\Support\Math\Matrix\WMatrix4.h" />
+    <ClInclude Include="Source\Core\Support\Math\Primitive\WPrimitives.h" />
+    <ClInclude Include="Source\Core\Support\Math\Quaternion\WQuaternion.h" />
+    <ClInclude Include="Source\Core\Support\Math\Transform\WTransform2D.h" />
+    <ClInclude Include="Source\Core\Support\Math\Transform\WTransform3D.h" />
+    <ClInclude Include="Source\Core\Support\Math\Vector\WVector2.h" />
+    <ClInclude Include="Source\Core\Support\Math\Vector\WVector3.h" />
+    <ClInclude Include="Source\Core\Support\Math\Vector\WVector4.h" />
+    <ClInclude Include="Source\Core\Support\Math\WMath.h" />
+    <ClInclude Include="Source\Core\Support\Thread\FThread.h" />
+    <ClInclude Include="Source\Core\Support\Timeline\FTimeline.h" />
+    <ClInclude Include="Source\Core\Time\FTime.h" />
+    <ClInclude Include="Source\Core\Video\FGraphic.h" />
+    <ClInclude Include="Source\Core\Video\FShaderBase.h" />
+    <ClInclude Include="Source\Core\Widget\FWidgetInput.h" />
+    <ClInclude Include="Source\Core\Widget\FWidgetPanel.h" />
+    <ClInclude Include="Source\Core\Widget\IWidget.h" />
+    <ClInclude Include="Source\System\Engine\Light\FPointLight.h" />
+    <ClInclude Include="Source\System\Engine\Light\FSpotLight.h" />
+    <ClInclude Include="Source\System\Engine\Map\FMap.h" />
+    <ClInclude Include="Source\System\Engine\Player\FPlayer.h" />
+    <ClInclude Include="Source\System\Engine\Prop\FProp.h" />
+    <ClInclude Include="Source\System\Engine\Ship\FShip.h" />
+    <ClInclude Include="Source\System\Engine\Widget\Text\FWidText.h" />
+    <ClInclude Include="Source\System\Engine\Widget\Text\FWidTextShader.h" />
+    <ClInclude Include="Source\System\Engine\Widget\View\FWidView.h" />
+    <ClInclude Include="Source\System\Engine\Widget\View\FWidViewShader.h" />
+    <ClInclude Include="Source\System\FSystem.h" />
+    <ClInclude Include="Source\System\Objects\Prop\FLighthouse.h" />
+    <ClInclude Include="Source\System\Objects\Prop\FNuncio.h" />
+    <ClInclude Include="Source\System\Objects\Ship\FNormalShip.h" />
+    <ClInclude Include="Source\System\Objects\Special Effects\Dust\FDust.h" />
+    <ClInclude Include="Source\System\Objects\Special Effects\Foam\FFoam.h" />
+    <ClInclude Include="Source\System\Objects\Special Effects\Smoke\FSmoke.h" />
+    <ClInclude Include="Source\System\Objects\Special Effects\Trace\FTrace.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Name Conventions.txt" />
+    <Text Include="Source\Core\Support\Math\Transform\Details.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

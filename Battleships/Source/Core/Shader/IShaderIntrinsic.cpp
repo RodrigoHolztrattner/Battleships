@@ -1,0 +1,16 @@
+///////////////////////////////////////////////////////////////////////////////
+// Filename: IShaderIntrinsic.cpp
+///////////////////////////////////////////////////////////////////////////////
+#include "IShaderIntrinsic.h"
+
+IShaderIntrinsic::IShaderIntrinsic()
+{
+}
+
+IShaderIntrinsic::IShaderIntrinsic(const IShaderIntrinsic& other)
+{
+}
+
+IShaderIntrinsic::~IShaderIntrinsic()
+{
+}

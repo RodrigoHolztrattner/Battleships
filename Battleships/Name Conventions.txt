@@ -1,0 +1,79 @@
+
+////////////////////////
+// NAMING CONVENTIONS //
+////////////////////////
+
+
+// Prefix "W" was used by classes from the Wonderland Engine, so, respect it
+//
+
+// Use the prefix "T" for templates in general.
+
+// Use the prefix "I" for interfaces.
+// Those interfaces cant have member variables but theis methods can be or not be virtual (as long they
+// are defined inline).
+
+// Use the prefix "E" for enums.
+// Prefer using strong typed enums.
+
+// Use the prefix "X" for classes derived from XClass
+
+// Use the prefix "F" for end classes (final)
+//
+
+
+
+
+
+
+//
+//
+//
+
+T = templates
+F = all
+I = interfaces
+U = derived from Uobject
+E = enum
+
+- Usar um "b" antes do nome de uma variável booleana, tipo bIsAlive
+- Usar strong typed enums:
+
+	enum class Colors : char { RED = 1, GREEN = 2, BLUE = 3 };
+
+- Usar #pragma once em vez de guardians
+- Usar sempre std::nullptr_t em vez de nullptr
+
+***
+Never allow float to implicit convert to int32. This is a slow operation, and does not compile on all compilers. 
+Instead, always use the appTrunc() function to convert to int32. 
+This will ensure cross-compiler compatibility as well as generate faster code.
+
+***
+Interface classes (prefixed with "I") should always be abstract and must not have member variables. 
+Interfaces are allowed to contain methods that are not pure-virtual, and even methods that are non-virtual or static, 
+as long as they are implemented inline.
+
+***
+Use const wherever possible. Particularly on reference parameters and class methods. 
+const is documentation as much as it is a compiler directive.
+
+***
+Use the virtual and override keywords when declaring an overriding method. 
+When declaring a virtual function in a derived class that overrides a virtual function in the parent class, 
+you must use both the virtual and the override keywords.
+
+***
+bool for boolean values (NEVER assume the size of bool). BOOL will not compile.
+TCHAR for a character (NEVER assume the size of TCHAR).
+uint8 for unsigned bytes (1 byte).
+int8 for signed bytes (1 byte).
+uint16 for unsigned "shorts" (2 bytes).
+int16 for signed "shorts" (2 bytes).
+uint32 for unsigned ints (4 bytes).
+int32 for signed ints (4 bytes).
+uint64 for unsigned "quad words" (8 bytes).
+int64 for signed "quad words" (8 bytes).
+float for single precision floating point (4 bytes).
+double for double precision floating point (8 bytes).
+PTRINT for an integer that may hold a pointer (NEVER assume the size of PTRINT).

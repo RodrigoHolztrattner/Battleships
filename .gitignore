@@ -1,0 +1,8 @@
+*.png
+*.tga
+Battleships/shader-error.txt
+Battleships/Debug/
+Battleships/Source/ThirdParty/freetype/
+Battleships/Source/ThirdParty/GLEW/
+Battleships/Source/ThirdParty/GLFW/
+Battleships/Source/ThirdParty/glm/
