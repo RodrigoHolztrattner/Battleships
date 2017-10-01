@@ -12,6 +12,6 @@ Dependencies:
 - freetype
 - zlib
 
-Projects link: https://sites.google.com/view/rodrigoholztrattner/projects/project-battleships
+Project link: https://sites.google.com/view/rodrigoholztrattner/projects/project-battleships
 
 Languages: C++ with OpenGL (GLFW and GLEW)
